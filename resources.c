@@ -27,12 +27,12 @@ char **strTok(char *holder, char **argv)
 }
 void exitFunction(char *holder, char **av, char **argv)
 {
-	int count = 1;
+	int count = 1, i;
 	if (argv[0] != NULL)
 	{
 		if (argv[1] != NULL)
 		{
-			for (int i = 0; argv[1][i] != '\0'; i++)
+			for (i = 0; argv[1][i] != '\0'; i++)
 			{
 				if (!_isdigit(argv[1][i]))
 				{
@@ -80,8 +80,8 @@ int displayEnv(char **argv, char **env)
 }
 int checker(char *holder)
 {
-	int isEmpty = 1;
-	for (int i = 0; holder[i]; i++)
+	int isEmpty = 1, i;
+	for (i = 0; holder[i]; i++)
 	{
 		if (!_isspace((unsigned char)holder[i]))
 		{
