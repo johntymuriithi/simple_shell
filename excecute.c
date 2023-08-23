@@ -34,7 +34,7 @@ int show(char *holder, char **av, char **argv, char **env)
 	else
 	{
 		wait(&status);
-		errno = status;
+		
 		free(path);
 		return WEXITSTATUS(status);
 	}
