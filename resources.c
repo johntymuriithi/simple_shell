@@ -15,7 +15,7 @@ char *removerLine(char *holder)
 char **strTok(char *holder, char **argv)
 {
 	int j = 0;
-	char *delim = " \n";
+	char *delim = " ";
 	argv[j] = strtok(holder, delim);
 	while (holder[j])
 	{
