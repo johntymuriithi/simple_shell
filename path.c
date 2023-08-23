@@ -29,13 +29,12 @@ char *location(char *path, char *arg)
 char *get_Loc(char *arg)
 {
 	char *path;
-	if (arg[0] == '/')
-	{
+
 	if (access(arg, X_OK) == 0)
 	{
 		return (my_strdup(arg));
 	}
-	}
+
 	path = getenv("PATH");
 	if (path)
 	{
