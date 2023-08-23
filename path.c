@@ -1,8 +1,11 @@
 #include "main.h"
+
 char *location(char *path, char *arg)
+
 {
 	char *pathCpy, *pathToken, *filePath;
 	char *delim = ":";
+
 	pathCpy = my_strdup(path);
 	pathToken = strtok(pathCpy, delim);
 	while (pathToken != NULL)
@@ -27,8 +30,10 @@ char *location(char *path, char *arg)
 	return (NULL);
 }
 char *get_Loc(char *arg)
+
 {
 	char *path;
+
 	if (access(arg, X_OK) == 0)
 	{
 		return (my_strdup(arg));

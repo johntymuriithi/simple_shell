@@ -1,8 +1,12 @@
 #include "main.h"
+
+
 int show(char *holder, char **av, char **argv, char *path, char **env)
+
 {
 	pid_t child;
 	int status, count = 1;
+
 	path = get_Loc(argv[0]);
 	if (path == NULL)
 	{
@@ -34,6 +38,7 @@ int show(char *holder, char **av, char **argv, char *path, char **env)
 		wait(&status);
 		errno = status;
 		free(path);
-		return WEXITSTATUS(status);
+		return (WEXITSTATUS(status));
 	}
+	return (0);
 }

@@ -1,9 +1,7 @@
 #include "main.h"
 char *removerLine(char *holder)
-
 {
 	int i = 0;
-
 	while (holder[i])
 	{
 		if (holder[i] == '\n')
@@ -15,11 +13,9 @@ char *removerLine(char *holder)
 	return (holder);
 }
 char **strTok(char *holder, char **argv)
-
 {
 	int j = 0;
 	char *delim = " \n";
-
 	argv[j] = strtok(holder, delim);
 	while (holder[j])
 	{
@@ -30,10 +26,8 @@ char **strTok(char *holder, char **argv)
 	return (argv);
 }
 void exitFunction(char *holder, char **av, char **argv)
-
 {
 	int count = 1, i;
-
 	if (argv[0] != NULL)
 	{
 		if (argv[1] != NULL)
@@ -56,7 +50,6 @@ void exitFunction(char *holder, char **av, char **argv)
 			if (_atoi(argv[1]))
 			{
 				int status = _atoi(argv[1]);
-
 				free(holder);
 				exit(status);
 			}
@@ -69,16 +62,13 @@ void exitFunction(char *holder, char **av, char **argv)
 	}
 }
 int displayEnv(char **argv, char **env)
-
 {
 	if (argv[0] != NULL)
 	{
 		if (_strcmp(argv[0], "env") == 0)
 		{
 			char **envPtr = env;
-
-			while (*envPtr != NULL)
-			{
+			while (*envPtr != NULL) {
 				printString(*envPtr);
 				_putchar('\n');
 				envPtr++;
@@ -89,11 +79,9 @@ int displayEnv(char **argv, char **env)
 	return (0);
 }
 int checker(char *holder)
-
 {
-	int isEmpty = 1, i;
-
-	for (i = 0; holder[i]; i++)
+	int isEmpty = 1;
+	for (int i = 0; holder[i]; i++)
 	{
 		if (!_isspace((unsigned char)holder[i]))
 		{
