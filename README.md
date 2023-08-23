@@ -25,3 +25,6 @@ You are not allowed to use getline
 You don’t have to:
 be able to move the cursor
 Task 7 You are not allowed to use strtok
+Task 8
+handle arguments for the built-in exit
+Usage: exit status, where status is an integer used to exit the shell
