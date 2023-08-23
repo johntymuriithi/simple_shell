@@ -33,7 +33,10 @@ void exitFunction(char *holder, char **av, char **argv)
 
 {
 	int count = 1, i;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
 	if (argv[0] != NULL)
 	{
 		if (argv[1] != NULL)
@@ -92,7 +95,10 @@ int checker(char *holder)
 
 {
 	int isEmpty = 1, i;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
 	for (i = 0; holder[i]; i++)
 	{
 		if (!_isspace((unsigned char)holder[i]))

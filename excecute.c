@@ -1,9 +1,14 @@
 #include "main.h"
 
+<<<<<<< HEAD
 
 int show(char *holder, char **av, char **argv, char *path, char **env)
 
+=======
+int show(char *holder, char **av, char **argv, char **env)
+>>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
 {
+	char *path;
 	pid_t child;
 	int status, count = 1;
 
@@ -36,7 +41,7 @@ int show(char *holder, char **av, char **argv, char *path, char **env)
 	else
 	{
 		wait(&status);
-		errno = status;
+	errno = 127;	
 		free(path);
 		return (WEXITSTATUS(status));
 	}

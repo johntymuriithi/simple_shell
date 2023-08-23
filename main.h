@@ -29,7 +29,7 @@ char *get_Loc(char *arg);
 char *location(char *path, char *arg);
 int printString(char *str);
 int _putchar(char c);
-int show(char *holder, char **av, char **argv, char *path, char **env);
+int show(char *holder, char **av, char **argv, char **env);
 int checker(char *holder);
 char **strTok(char *holder, char **argv);
 char *removerLine(char *holder);

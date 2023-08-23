@@ -38,6 +38,7 @@ char *get_Loc(char *arg)
 	{
 		return (my_strdup(arg));
 	}
+
 	path = getenv("PATH");
 	if (path)
 	{
