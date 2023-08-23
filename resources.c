@@ -14,16 +14,17 @@ char *removerLine(char *holder)
 }
 char **strTok(char *holder, char **argv)
 {
-	int j = 0;
-	char *delim = " \n";
-	argv[j] = strtok(holder, delim);
-	while (holder[j])
-	{
-		j++;
-		argv[j] = strtok(NULL, delim);
-	}
-	argv[j] = NULL;
-	return (argv);
+    int j = 0;
+    char *delim = " \n";
+    
+    argv[j] = strtok(holder, delim);
+    
+    while (argv[j] && j < MAX_ARGS - 1) {
+        j++;
+        argv[j] = strtok(NULL, delim);
+    }
+    
+    return argv;
 }
 void exitFunction(char *holder, char **av, char **argv)
 {
