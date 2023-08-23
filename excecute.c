@@ -1,10 +1,22 @@
 #include "main.h"
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 int show(char *holder, char **av, char **argv, char *path, char **env)
 
 =======
+=======
+/**
+ * show - to run the execu function
+ * @holder: it holds array of arguments
+ * @av: array of arguments
+ * @argv: arguments passed
+ * @env: enviroment variable
+ *
+ * Return: status of the child procee
+ */
+>>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 int show(char *holder, char **av, char **argv, char **env)
 >>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
 {
@@ -41,7 +53,7 @@ int show(char *holder, char **av, char **argv, char **env)
 	else
 	{
 		wait(&status);
-	errno = 127;	
+		errno = 127;
 		free(path);
 		return (WEXITSTATUS(status));
 	}

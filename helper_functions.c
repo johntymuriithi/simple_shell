@@ -75,6 +75,13 @@ char *_strcat(char *dest, char *src)
 	dest[dlen] = '\0';
 	return (dest);
 }
+/**
+ * _strncpy - copy one string to another
+ * @dest: string to where to be copied
+ * @src: string to be copied
+ *
+ * Return: new string
+ */
 char *_strncpy(char *dest, char *src)
 
 {
@@ -87,6 +94,12 @@ char *_strncpy(char *dest, char *src)
 	dest[i++] = '\0';
 	return (dest);
 }
+/**
+ * _strlen - find the length of a string
+ * @str: string invloved
+ *
+ * Return: the length
+ */
 size_t _strlen(const char *str)
 
 {
@@ -96,6 +109,7 @@ size_t _strlen(const char *str)
 		length++;
 	return (length);
 }
+<<<<<<< HEAD
 /**
  * _isdigit - Checks for a digit
  * @x: The number is checked
@@ -115,3 +129,5 @@ int _isspace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\v' || c == '\f');
 }
+=======
+>>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8

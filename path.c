@@ -1,5 +1,15 @@
 #include "main.h"
+<<<<<<< HEAD
 
+=======
+/**
+ * location - find location
+ * @path: path of the command
+ * @arg: command passed
+ *
+ * Return: filepath if found
+ */
+>>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 char *location(char *path, char *arg)
 
 {
@@ -29,6 +39,12 @@ char *location(char *path, char *arg)
 	free(pathCpy);
 	return (NULL);
 }
+/**
+ * get_Loc - get path
+ * @arg: command to look out the path
+ *
+ * Return: path if found
+ */
 char *get_Loc(char *arg)
 
 {
