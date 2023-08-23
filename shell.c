@@ -4,7 +4,7 @@
 int main(int ac, char **av, char **env)
 {
 	int isEmpty, exitStatus, charNo;
-	char *prompt = "#cisfun$ ", *holder = NULL, *argv[12];
+	char *prompt = ":) ", *holder = NULL, *argv[12];
 	size_t size = 0;
 	(void)ac;
 
