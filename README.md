@@ -24,3 +24,4 @@ You will need to use static variables
 You are not allowed to use getline
 You don’t have to:
 be able to move the cursor
+Task 7 You are not allowed to use strtok
