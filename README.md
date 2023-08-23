@@ -12,3 +12,7 @@ Task 2 Handle command lines with arguments
 Task 3 
 Handle the PATH
 fork must not be called if the command doesn’t exist
+Task 4
+Implement the exit built-in, that exits the shell
+Usage: exit
+You don’t have to handle any argument to the built-in exit
