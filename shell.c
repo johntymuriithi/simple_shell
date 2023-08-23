@@ -11,6 +11,7 @@ int main(int ac, char **av, char **env)
 	while (1)
 	{
 		if (isatty(STDIN_FILENO)){
+			fflush(stdout);
 				printString(prompt);}
 				charNo = getline(&holder, &size, stdin);
 				if (charNo == -1)
