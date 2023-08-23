@@ -52,18 +52,9 @@ char **strTok(char *holder, char **argv)
  * Return: no return
  */
 void exitFunction(char *holder, char **av, char **argv)
-
 {
-<<<<<<< HEAD
-	int count = 1, i;
-<<<<<<< HEAD
-
-=======
->>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
-=======
 	int count = 1, i, status;
 
->>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 	if (argv[0] != NULL)
 	{
 		if (argv[1] != NULL)
@@ -85,12 +76,7 @@ void exitFunction(char *holder, char **av, char **argv)
 			}
 			if (_atoi(argv[1]))
 			{
-<<<<<<< HEAD
-				int status = _atoi(argv[1]);
-
-=======
 				status = _atoi(argv[1]);
->>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 				free(holder);
 				exit(status);
 			}
@@ -139,14 +125,7 @@ int checker(char *holder)
 
 {
 	int isEmpty = 1, i;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 64fafcbf367f34e73a6530246fa8909123fd86c2
-=======
-
->>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 	for (i = 0; holder[i]; i++)
 	{
 		if (!_isspace((unsigned char)holder[i]))

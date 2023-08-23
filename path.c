@@ -1,7 +1,5 @@
 #include "main.h"
-<<<<<<< HEAD
 
-=======
 /**
  * location - find location
  * @path: path of the command
@@ -9,7 +7,6 @@
  *
  * Return: filepath if found
  */
->>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
 char *location(char *path, char *arg)
 
 {

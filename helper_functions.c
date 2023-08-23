@@ -109,25 +109,3 @@ size_t _strlen(const char *str)
 		length++;
 	return (length);
 }
-<<<<<<< HEAD
-/**
- * _isdigit - Checks for a digit
- * @x: The number is checked
- * Return: 1 if the it's a numbrr and 0 if otherwise
- */
-int _isdigit(int x)
-
-{
-	if (x >= 48 && x <= 57)
-	{
-		return (1);
-	}
-	return (0);
-}
-int _isspace(char c)
-
-{
-	return (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\v' || c == '\f');
-}
-=======
->>>>>>> bfd225e04e0dc24aef574ad8319b49a6537771f8
