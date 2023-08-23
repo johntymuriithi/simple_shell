@@ -10,6 +10,7 @@ int _atoi(char *s)
 	unsigned int ni = 0;
 	int min = 1;
 	int isi = 0;
+
 	while (s[c])
 	{
 		if (s[c] == 45)
@@ -58,6 +59,7 @@ int _strcmp(char *s1, char *s2)
 char *_strcat(char *dest, char *src)
 {
 	int dlen = 0, i;
+
 	while (dest[dlen])
 	{
 		dlen++;
@@ -70,9 +72,17 @@ char *_strcat(char *dest, char *src)
 	dest[dlen] = '\0';
 	return (dest);
 }
+/**
+ * _strncpy - copy one string to another
+ * @dest: string to where to be copied
+ * @src: string to be copied
+ *
+ * Return: new string
+ */
 char *_strncpy(char *dest, char *src)
 {
 	int i;
+
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
@@ -80,26 +90,17 @@ char *_strncpy(char *dest, char *src)
 	dest[i++] = '\0';
 	return (dest);
 }
+/**
+ * _strlen - find the length of a string
+ * @str: string invloved
+ *
+ * Return: the length
+ */
 size_t _strlen(const char *str)
 {
 	size_t length = 0;
+
 	while (*str++)
 		length++;
 	return (length);
-}
-/**
- * _isdigit - Checks for a digit
- * @x: The number is checked
- * Return: 1 if the it's a numbrr and 0 if otherwise
- */
-int _isdigit(int x)
-{
-	if (x >= 48 && x <= 57)
-	{
-		return (1);
-	}
-	return (0);
-}
-int _isspace(char c) {
-	return (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\v' || c == '\f');
 }

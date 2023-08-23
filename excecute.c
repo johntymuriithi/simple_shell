@@ -1,10 +1,19 @@
 #include "main.h"
-
+/**
+ * show - to run the execu function
+ * @holder: it holds array of arguments
+ * @av: array of arguments
+ * @argv: arguments passed
+ * @env: enviroment variable
+ *
+ * Return: status of the child procee
+ */
 int show(char *holder, char **av, char **argv, char **env)
 {
 	char *path;
 	pid_t child;
 	int status, count = 1;
+
 	path = get_Loc(argv[0]);
 	if (path == NULL)
 	{
@@ -34,9 +43,9 @@ int show(char *holder, char **av, char **argv, char **env)
 	else
 	{
 		wait(&status);
-	errno = 127;	
+		errno = 127;
 		free(path);
-		return WEXITSTATUS(status);
+		return (WEXITSTATUS(status));
 	}
 	return (0);
 }

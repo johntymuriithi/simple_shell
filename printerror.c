@@ -1,5 +1,14 @@
 #include "main.h"
-
+/**
+ * err_msg - print out error
+ * @fd: command count
+ * @num_cmd: count variable
+ * @s1: first argument
+ * @s2: second argument
+ * @s3: third argument
+ *
+ * Return: no return
+ */
 void err_msg(int fd, int num_cmd, char *s1, char *s2, char *s3)
 {
 	char num_stat;
@@ -35,7 +44,17 @@ void err_msg(int fd, int num_cmd, char *s1, char *s2, char *s3)
 
 	write(fd, "\n", 1);
 }
-
+/**
+ * err_mg - print out error
+ * @fd: command count
+ * @num_cmd: count variable
+ * @s1: first argument
+ * @s2: second argument
+ * @s3: third argument
+ * @s4: fourth argument
+ *
+ * Return: no return
+ */
 void err_mg(int fd, int num_cmd, char *s1, char *s2, char *s3, char *s4)
 {
 	char num_stat;

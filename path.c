@@ -1,8 +1,16 @@
 #include "main.h"
+/**
+ * location - find location
+ * @path: path of the command
+ * @arg: command passed
+ *
+ * Return: filepath if found
+ */
 char *location(char *path, char *arg)
 {
 	char *pathCpy, *pathToken, *filePath;
 	char *delim = ":";
+
 	pathCpy = my_strdup(path);
 	pathToken = strtok(pathCpy, delim);
 	while (pathToken != NULL)
@@ -26,6 +34,12 @@ char *location(char *path, char *arg)
 	free(pathCpy);
 	return (NULL);
 }
+/**
+ * get_Loc - get path
+ * @arg: command to look out the path
+ *
+ * Return: path if found
+ */
 char *get_Loc(char *arg)
 {
 	char *path;
